@@ -1725,12 +1725,15 @@ footer {
   }
   
   .skills-ide-wrapper {
-    height: auto;
-    min-height: 380px;
+    height: auto !important;
+    min-height: auto !important;
+    overflow: visible !important;
   }
   
   .ide-body {
     grid-template-columns: 32px 1fr;
+    overflow-y: visible !important;
+    height: auto !important;
   }
   
   .ide-line-numbers {
