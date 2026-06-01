@@ -1503,19 +1503,7 @@ footer {
     padding: 16px 20px;
   }
   .shortcut-cta-box {
-    flex-direction: column !important;
-    padding: 24px !important;
-    min-height: auto !important;
-    gap: 16px;
-    align-items: center !important;
-    justify-content: center !important;
-    text-align: center !important;
-  }
-
-  .shortcut-cta-box .home-cta-container {
-    margin-left: 0 !important;
-    width: 100% !important;
-    justify-content: center !important;
+    display: none !important;
   }
 
   .chatbot-input, .form-input, textarea.form-input {
