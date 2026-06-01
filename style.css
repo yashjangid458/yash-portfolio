@@ -1464,6 +1464,9 @@ footer {
   .chatbot-bento {
     grid-column: span 2;
   }
+  .span-3 {
+    grid-column: span 2 !important;
+  }
   .skills-ide-wrapper {
     height: auto;
   }
@@ -1485,6 +1488,19 @@ footer {
     padding: 24px !important;
     min-height: auto !important;
     gap: 16px;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+
+  .shortcut-cta-box .home-cta-container {
+    margin-left: 0 !important;
+    width: 100% !important;
+    justify-content: center !important;
+  }
+
+  .chatbot-input, .form-input, textarea.form-input {
+    font-size: 16px !important;
   }
 
   .app-container {
@@ -1585,20 +1601,44 @@ footer {
     perspective: none;
     perspective-origin: none;
     margin: 12px 0 0 0;
+    overflow-x: hidden !important;
   }
 
   .deck-3d {
     max-height: none;
   }
 
+  /* GPU-Accelerated buttery smooth 2D flat sliding transitions for mobile viewports */
+  .panel.next {
+    transform: translate3d(100%, 0, 0) !important;
+  }
+
+  .panel.prev {
+    transform: translate3d(-100%, 0, 0) !important;
+  }
+
+  .panel.hidden-right {
+    transform: translate3d(200%, 0, 0) !important;
+  }
+
+  .panel.hidden-left {
+    transform: translate3d(-200%, 0, 0) !important;
+  }
+
   .panel {
     grid-template-columns: 1fr;
     gap: 16px;
-    padding: 10px;
+    padding: 10px 10px 110px 10px !important;
+    overflow-x: hidden !important;
   }
 
-  .span-2, .span-3, .chatbot-bento {
-    grid-column: span 1;
+  .span-2, .span-3, .chatbot-bento, .row-2, .row-3 {
+    grid-column: span 1 !important;
+    grid-row: auto !important;
+  }
+
+  .bento-card {
+    height: auto !important;
   }
 
   .hero-bento {
@@ -1726,7 +1766,12 @@ footer {
   }
 
   .bento-card {
-    padding: 20px;
+    padding: 16px !important;
+  }
+
+  .projects-container {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
   }
 
   .hero-title {
@@ -1738,19 +1783,19 @@ footer {
   }
 
   .skills-card {
-    padding: 16px;
+    padding: 16px !important;
   }
 
   .timeline-content {
-    padding: 16px;
+    padding: 16px !important;
   }
 
   .project-card {
-    padding: 16px;
+    padding: 16px !important;
   }
 
   .contact-form {
-    padding: 16px;
+    padding: 16px !important;
   }
 }
 
