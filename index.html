@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yash Jangid | AI/ML Engineer & Python Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Yash Jangid, an AI/ML Engineer & Python Developer building stateful agents, RAG pipelines, and full-stack backend integrations. Currently at BIT Mesra.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Futuristic terminal boot loader diagnostic sequence -->
+  <div id="boot-loader" class="boot-loader-container">
+    <div class="boot-terminal-box">
+      <div class="boot-terminal-header">
+        <div class="simulator-dots">
+          <div class="simulator-dot red"></div>
+          <div class="simulator-dot yellow"></div>
+          <div class="simulator-dot green"></div>
+        </div>
+        <span class="boot-terminal-title">YASH_AI // BOOT CORE</span>
+      </div>
+      <div class="boot-terminal-logs" id="boot-logs">> Synchronizing encryption sequences...</div>
+    </div>
+  </div>
+
+  <!-- Interactive 3D Cursor Spotlight Light Follower -->
+  <div id="cursor-glow" class="cursor-glow-spotlight"></div>
+
+  <!-- Background Canvas for Neural Particle Field -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- SVG Gradients Definitions -->
+  <svg style="width:0;height:0;position:absolute;" aria-hidden="true">
+    <defs>
+      <linearGradient id="cyan-purple-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#06b6d4" />
+        <stop offset="100%" stop-color="#8b5cf6" />
+      </linearGradient>
+    </defs>
+  </svg>
+
+  <div class="app-container">
+    
+    <!-- Floating Dashboard Header -->
+    <header id="main-header">
+      <div class="logo-container">
+        <div class="logo-icon">YJ</div>
+        <div class="logo-text">
+          YASH JANGID
+          <span>AI/ML ENGINEER</span>
+        </div>
+      </div>
+      
+
+
+      <nav id="navbar">
+        <button class="nav-btn active" data-panel="home" id="btn-home">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+          <span class="nav-label">Home</span>
+        </button>
+        <button class="nav-btn" data-panel="skills" id="btn-skills">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+          <span class="nav-label">Skills</span>
+        </button>
+        <button class="nav-btn" data-panel="experience" id="btn-experience">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+          <span class="nav-label">Work</span>
+        </button>
+        <button class="nav-btn" data-panel="projects" id="btn-projects">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+          <span class="nav-label">Projects</span>
+        </button>
+        <button class="nav-btn" data-panel="contact" id="btn-contact">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          <span class="nav-label">Contact</span>
+        </button>
+      </nav>
+    </header>
+
+    <!-- 3D Perspective Card Deck Viewport -->
+    <main class="viewport-3d">
+      <div class="deck-3d" id="deck-router">
+        
+        <!-- PANEL 1: HOME BENTO GRID -->
+        <section class="panel active" id="panel-home">
+          <!-- Hero bento card (Intro + Profile Photo) -->
+          <div class="bento-card span-2 row-2 hero-bento">
+            <div class="hero-text">
+              <div class="badge">
+                <span class="pulse-dot"></span>
+                Active Agent Architect
+              </div>
+              <h1 class="hero-title">
+                Hi, I'm <span class="name">Yash Jangid</span>
+              </h1>
+              <h2 class="hero-subtitle">AI/ML Engineer & Python Developer</h2>
+              <p class="hero-description">
+                I build production-ready artificial intelligence systems, multi-node agentic pipelines, and scalable backend integrations. Specialized in LangGraph, LangChain, vector storage, and stateful multi-turn conversation RAG architectures.
+              </p>
+            </div>
+            
+            <div class="hero-image-box">
+              <div class="profile-frame">
+                <!-- User's authentic image from folder -->
+                <img src="WhatsApp Image 2026-06-01 at 09.48.12.jpeg" alt="Yash Jangid" class="profile-img">
+              </div>
+            </div>
+          </div>
+
+          <!-- Embedded Yash AI Chatbot Bento Card -->
+          <div class="bento-card span-1 row-3 chatbot-bento">
+            <div class="chatbot-header">
+              <div class="chatbot-header-left">
+                <div class="chatbot-dot"></div>
+                <span class="chatbot-title">Yash AI Assistant</span>
+              </div>
+              <div class="badge" style="padding: 2px 8px; font-size: 9px; margin: 0;">RAG Core</div>
+            </div>
+
+            <div class="chatbot-logs" id="bento-chat-logs">
+              <div class="bento-msg incoming">
+                Hello! I am Yash AI, pre-loaded with Yash Jangid's professional resume. Ask me about his projects, skills, or studies!
+              </div>
+            </div>
+
+            <div class="chatbot-suggestions">
+              <button class="chatbot-suggest-btn" onclick="sendBentoSuggested('Tell me about the Agentic PDF System')">PDF Agent</button>
+              <button class="chatbot-suggest-btn" onclick="sendBentoSuggested('What are your top technical skills?')">Skills</button>
+              <button class="chatbot-suggest-btn" onclick="sendBentoSuggested('Are you open to remote roles?')">Hiring?</button>
+            </div>
+
+            <div class="chatbot-input-bar">
+              <input type="text" class="chatbot-input" id="bento-chat-input" placeholder="Query Yash AI..." onkeydown="if(event.key === 'Enter') sendBentoUserMsg();">
+              <button class="chatbot-send-btn" onclick="sendBentoUserMsg()">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Shortcut CTA & Status Bento Card -->
+          <div class="bento-card span-2 shortcut-cta-box">
+            <div class="badge" style="margin: 0; background: rgba(6,182,212,0.06); border-color: rgba(6,182,212,0.2); color: var(--secondary);">
+              <span class="pulse-dot" style="background: var(--secondary); box-shadow: 0 0 10px var(--secondary);"></span>
+              BIT Mesra AI Scholar
+            </div>
+            
+            <div class="home-cta-container" style="margin-left: auto;">
+              <button class="btn-primary" id="home-view-projects">
+                View Projects
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- PANEL 2: SKILLS BENTO GRID -->
+        <section class="panel next" id="panel-skills">
+          <div class="bento-card span-3 row-3">
+            <div class="skills-header-container">
+              <div>
+                <h2 class="section-title">Technical Skillset</h2>
+                <p class="section-subtitle">Categorized Expertise & Technologies</p>
+              </div>
+              
+              <!-- Dashboard Skills Visual vs IDE Code toggle -->
+              <div class="skills-toggle-bar">
+                <button class="skills-toggle-btn active" id="btn-skills-visual" onclick="toggleSkillsView('visual')">Visual Dashboard</button>
+                <button class="skills-toggle-btn" id="btn-skills-ide" onclick="toggleSkillsView('ide')">Resume IDE</button>
+              </div>
+            </div>
+            
+            <!-- View 1: Visual Skills Grid -->
+            <div class="skills-grid" id="skills-visual-container">
+              <!-- Core & Languages -->
+              <div class="skills-card">
+                <div class="skills-card-title">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                  Core Languages
+                </div>
+                <div class="skills-list">
+                  <div class="skill-item">
+                    <div class="skill-info"><span class="skill-name">Python</span><span class="skill-percentage">95%</span></div>
+                    <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 95%"></div></div>
+                  </div>
+                  <div class="skill-item">
+                    <div class="skill-info"><span class="skill-name">C Programming</span><span class="skill-percentage">75%</span></div>
+                    <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 75%"></div></div>
+                  </div>
+                  <div class="skill-item">
+                    <div class="skill-info"><span class="skill-name">SQL</span><span class="skill-percentage">85%</span></div>
+                    <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 85%"></div></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- AI & ML -->
+              <div class="skills-card">
+                <div class="skills-card-title">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                  AI & Agentic Systems
+                </div>
+                <div class="skills-list">
+                  <div class="skill-item">
+                    <div class="skill-info"><span class="skill-name">LangChain & LangGraph</span><span class="skill-percentage">90%</span></div>
+                    <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 90%"></div></div>
+                  </div>
+                  <div class="skill-item">
+                    <div class="skill-info"><span class="skill-name">Retrieval-Augmented Gen (RAG)</span><span class="skill-percentage">92%</span></div>
+                    <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 92%"></div></div>
+                  </div>
+                  <div class="skill-item">
+                    <div class="skill-info"><span class="skill-name">OpenAI API & LLM Architectures</span><span class="skill-percentage">95%</span></div>
+                    <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 95%"></div></div>
+                  </div>
+                  <div class="skill-item">
+                    <div class="skill-info"><span class="skill-name">Prompt Engineering & Vector Embeddings</span><span class="skill-percentage">94%</span></div>
+                    <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 94%"></div></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Software Engineering & Databases -->
+              <div class="skills-card">
+                <div class="skills-card-title">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"></path></svg>
+                  Databases & Backend
+                </div>
+                <div class="skills-list">
+                  <div class="skill-item">
+                    <div class="skill-info"><span class="skill-name">PostgreSQL & Supabase</span><span class="skill-percentage">88%</span></div>
+                    <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 88%"></div></div>
+                  </div>
+                  <div class="skill-item">
+                    <div class="skill-info"><span class="skill-name">REST APIs & Python SDKs</span><span class="skill-percentage">90%</span></div>
+                    <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 90%"></div></div>
+                  </div>
+                  <div class="skill-item">
+                    <div class="skill-info"><span class="skill-name">CI/CD & GitHub Actions</span><span class="skill-percentage">85%</span></div>
+                    <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 85%"></div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- View 2: Interactive Resume IDE Inspector -->
+            <div id="skills-ide-container" class="skills-ide-wrapper" style="display: none;">
+              <div class="ide-header">
+                <div class="ide-tab-bar">
+                  <button class="ide-tab active" id="tab-json" onclick="switchIdeTab('json')">resume.json</button>
+                  <button class="ide-tab" id="tab-py" onclick="switchIdeTab('py')">resume.py</button>
+                  <button class="ide-tab" id="tab-yaml" onclick="switchIdeTab('yaml')">resume.yaml</button>
+                </div>
+                <span class="ide-status-pill">UTF-8 // python3</span>
+              </div>
+              
+              <div class="ide-body">
+                <div class="ide-line-numbers">
+                  <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</span><span>20</span>
+                </div>
+                
+                <!-- Tab 1: JSON -->
+                <pre class="ide-code active" id="code-json"><code><span class="code-bracket">{</span>
+  <span class="code-key">"name"</span>: <span class="code-val">"Yash Jangid"</span>,
+  <span class="code-key">"title"</span>: <span class="code-val">"AI/ML Engineer & Python Developer"</span>,
+  <span class="code-key">"summary"</span>: <span class="code-val">"AI Engineer specializing in LangGraph and stateful RAG systems."</span>,
+  <span class="code-key">"core_skills"</span>: <span class="code-bracket">[</span>
+    <span class="code-val">"Python"</span>, <span class="code-val">"LangChain"</span>, <span class="code-val">"LangGraph"</span>, <span class="code-val">"RAG"</span>, <span class="code-val">"Supabase"</span>, <span class="code-val">"PostgreSQL"</span>
+  <span class="code-bracket">]</span>,
+  <span class="code-key">"experience"</span>: <span class="code-bracket">{</span>
+    <span class="code-key">"role"</span>: <span class="code-val">"AI/ML Developer (Independent)"</span>,
+    <span class="code-key">"highlights"</span>: <span class="code-bracket">[</span>
+      <span class="code-val">"Designed stateful AI agent via multi-node RAG using LangGraph"</span>,
+      <span class="code-val">"Architected vector storage using PostgreSQL & OpenAI Embeddings"</span>,
+      <span class="code-val">"Built Python GitHub Action for AI-powered automated PR audits"</span>
+    <span class="code-bracket">]</span>
+  <span class="code-bracket">}</span>,
+  <span class="code-key">"education"</span>: <span class="code-bracket">{</span>
+    <span class="code-key">"degree"</span>: <span class="code-val">"B.Tech in Artificial Intelligence & Machine Learning"</span>,
+    <span class="code-key">"institute"</span>: <span class="code-val">"BIT Mesra, Ranchi, India"</span>
+  <span class="code-bracket">}</span>
+<span class="code-bracket">}</span></code></pre>
+
+                <!-- Tab 2: Python -->
+                <pre class="ide-code" id="code-py" style="display: none;"><code><span class="code-keyword">class</span> <span class="code-class">YashJangid</span><span class="code-bracket">:</span>
+    <span class="code-keyword">def</span> <span class="code-func">__init__</span><span class="code-bracket">(</span>self<span class="code-bracket">)</span><span class="code-bracket">:</span>
+        self<span class="code-op">.</span>name <span class="code-op">=</span> <span class="code-val">"Yash Jangid"</span>
+        self<span class="code-op">.</span>role <span class="code-op">=</span> <span class="code-val">"AI/ML Engineer & Python Developer"</span>
+        self<span class="code-op">.</span>education <span class="code-op">=</span> <span class="code-val">"B.Tech AI & ML @ BIT Mesra"</span>
+        self<span class="code-op">.</span>core_specialties <span class="code-op">=</span> <span class="code-bracket">[</span>
+            <span class="code-val">"LangGraph"</span>, <span class="code-val">"Multi-Agent RAG"</span>, <span class="code-val">"Python Backends"</span>
+        <span class="code-bracket">]</span>
+        
+    <span class="code-keyword">def</span> <span class="code-func">get_agent_spec</span><span class="code-bracket">(</span>self<span class="code-bracket">)</span><span class="code-bracket">:</span>
+        <span class="code-keyword">return</span> <span class="code-bracket">{</span>
+            <span class="code-val">"orchestrator"</span>: <span class="code-val">"LangGraph (Stateful)"</span>,
+            <span class="code-val">"embeddings"</span>: <span class="code-val">"OpenAI text-embedding-3"</span>,
+            <span class="code-val">"vector_db"</span>: <span class="code-val">"Supabase / PostgreSQL"</span>,
+            <span class="code-val">"agent_status"</span>: <span class="code-val">"Active / Open to Work"</span>
+        <span class="code-bracket">}</span>
+
+<span class="code-keyword">if</span> __name__ <span class="code-op">==</span> <span class="code-val">"__main__"</span><span class="code-bracket">:</span>
+    yash <span class="code-op">=</span> <span class="code-class">YashJangid</span><span class="code-bracket">()</span>
+    <span class="code-func">print</span><span class="code-bracket">(</span>yash<span class="code-op">.</span><span class="code-func">get_agent_spec</span><span class="code-bracket">(</span><span class="code-bracket">)</span><span class="code-bracket">)</span></code></pre>
+
+                <!-- Tab 3: YAML -->
+                <pre class="ide-code" id="code-yaml" style="display: none;"><code><span class="code-key">engineer</span>:
+  <span class="code-key">name</span>: <span class="code-val">"Yash Jangid"</span>
+  <span class="code-key">title</span>: <span class="code-val">"AI/ML Engineer & Python Developer"</span>
+  <span class="code-key">current_focus</span>: <span class="code-val">"Stateful AI Agent Pipelines & RAG Systems"</span>
+  
+  <span class="code-key">technical_stack</span>:
+    <span class="code-key">languages</span>:
+      - <span class="code-val">Python</span>
+      - <span class="code-val">C</span>
+      - <span class="code-val">SQL</span>
+    <span class="code-key">agentic_frameworks</span>:
+      - <span class="code-val">LangChain</span>
+      - <span class="code-val">LangGraph</span>
+    <span class="code-key">database_vector</span>:
+      - <span class="code-val">PostgreSQL</span>
+      - <span class="code-val">Supabase (pgvector)</span>
+      
+  <span class="code-key">status</span>: <span class="code-val">"Active & looking for innovative collaborations"</span></code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- PANEL 3: PROJECTS BENTO GRID -->
+        <section class="panel hidden-right" id="panel-projects">
+          <div class="bento-card span-3 row-3" style="overflow-y: auto;">
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle" style="margin-bottom: 20px;">Agentic Architectures & AI Solutions</p>
+            
+            <div class="projects-container">
+              <!-- Project 1: Agentic PDF Analysis -->
+              <div class="project-card">
+                <div class="project-header">
+                  <div class="project-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                  </div>
+                  <div class="project-links">
+                    <a href="https://github.com/yashjangid458/project-1-ai-pdf-chatbot-langchain-main" target="_blank" class="project-link-btn" title="View Source">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    </a>
+                  </div>
+                </div>
+                <h3 class="project-title">Agentic PDF Analysis System</h3>
+                <p class="project-description">
+                  A multi-node Retrieval Graph featuring dynamic query routing to a vector database or direct LLM responses. Uses LangGraph to manage complex persistent multi-turn conversation states across full-stack delivery with a Next.js front-end and a Python REST API.
+                </p>
+                <div class="project-tags">
+                  <span class="project-tag">Python</span>
+                  <span class="project-tag">LangGraph</span>
+                  <span class="project-tag">Supabase</span>
+                  <span class="project-tag">RAG</span>
+                  <span class="project-tag">Next.js</span>
+                </div>
+                
+                <!-- Interactive Terminal Simulator -->
+                <div class="project-simulator" id="sim-pdf">
+                  <div class="simulator-header">
+                    <div class="simulator-dots">
+                      <div class="simulator-dot red"></div>
+                      <div class="simulator-dot yellow"></div>
+                      <div class="simulator-dot green"></div>
+                    </div>
+                    <span class="simulator-title">Agentic System Architecture</span>
+                    <button class="simulator-run-btn" onclick="explainPdfSystem()">Explain System</button>
+                  </div>
+                  <div class="simulator-logs" id="logs-pdf">> Press "Explain System" to review the architectural pipeline audit...</div>
+                </div>
+              </div>
+
+              <!-- Project 2: GitHub Code Reviewer -->
+              <div class="project-card">
+                <div class="project-header">
+                  <div class="project-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                  </div>
+                  <div class="project-links">
+                    <a href="https://github.com/yashjangid458/project-2-openai-pr-reviewer-main" target="_blank" class="project-link-btn" title="View Source">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    </a>
+                  </div>
+                </div>
+                <h3 class="project-title">AI-Powered GitHub Code Reviewer</h3>
+                <p class="project-description">
+                  Automated pull request review GitHub Action. Uses OpenAI API with direct direct secure routing. Features an interactive feedback loop responding directly to developer thread comments with optimized code suggestions and standard data governance structures.
+                </p>
+                <div class="project-tags">
+                  <span class="project-tag">Python</span>
+                  <span class="project-tag">OpenAI API</span>
+                  <span class="project-tag">GitHub Actions</span>
+                  <span class="project-tag">CI/CD</span>
+                </div>
+                
+                <!-- Interactive Terminal Simulator -->
+                <div class="project-simulator" id="sim-reviewer">
+                  <div class="simulator-header">
+                    <div class="simulator-dots">
+                      <div class="simulator-dot red"></div>
+                      <div class="simulator-dot yellow"></div>
+                      <div class="simulator-dot green"></div>
+                    </div>
+                    <span class="simulator-title">CI/CD Pipeline Architecture</span>
+                    <button class="simulator-run-btn" onclick="explainReviewSystem()">Explain Action</button>
+                  </div>
+                  <div class="simulator-logs" id="logs-reviewer">> Press "Explain Action" to review the automated verification hooks...</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- PANEL 4: EXPERIENCE BENTO GRID -->
+        <section class="panel hidden-right" id="panel-experience">
+          <div class="bento-card span-3 row-3" style="overflow-y: auto;">
+            <h2 class="section-title">Work History & Education</h2>
+            <p class="section-subtitle" style="margin-bottom: 20px;">Professional Timeline</p>
+            
+            <div class="experience-timeline">
+              <!-- Work Item 1 -->
+              <div class="timeline-item">
+                <div class="timeline-node"></div>
+                <div class="timeline-content">
+                  <div class="timeline-header">
+                    <div>
+                      <h3 class="timeline-role">AI/ML Developer</h3>
+                      <div class="timeline-company">Independent Project Developer | Remote</div>
+                    </div>
+                    <div class="timeline-duration">2024 - Present</div>
+                  </div>
+                  <div class="timeline-body">
+                    <ul>
+                      <li>Designed a stateful AI agent using LangGraph to automate document ingestion, parsing, and context-aware retrieval from large PDF files via a multi-node RAG pipeline.</li>
+                      <li>Architected vector storage using Supabase (PostgreSQL) with OpenAI embeddings, achieving real-time streaming responses and persistent multi-turn conversation state.</li>
+                      <li>Delivered a full-stack application integrating a Next.js front-end with a Python back-end via REST APIs, applying OOP principles and modular architecture.</li>
+                      <li>Developed a Python-based GitHub Action using the OpenAI API to automate pull request summaries, AI-driven code reviews, and release notes.</li>
+                      <li>Applied prompt engineering strategies and implemented a Quiet Mode feature to suppress low-value CI/CD notifications while maintaining strict data privacy routing.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Education BTech -->
+              <div class="timeline-item">
+                <div class="timeline-node"></div>
+                <div class="timeline-content">
+                  <div class="timeline-header">
+                    <div>
+                      <h3 class="timeline-role">Bachelor of Technology (B.Tech.)</h3>
+                      <div class="timeline-company">BIT Mesra, Ranchi, Jharkhand, India</div>
+                    </div>
+                    <div class="timeline-duration">2023 - Present</div>
+                  </div>
+                  <div class="timeline-body">
+                    <p>Specialization: <strong>Artificial Intelligence & Machine Learning</strong></p>
+                    <p style="margin-top: 10px;"><em>Relevant Coursework:</em> Data Structures & Algorithms, Object-Oriented Programming, Database Management Systems, Machine Learning, Artificial Intelligence, Software Engineering.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- PANEL 5: CONTACT BENTO GRID -->
+        <section class="panel hidden-right" id="panel-contact">
+          <div class="bento-card span-3 row-3" style="overflow-y: auto;">
+            <h2 class="section-title">Get in Touch</h2>
+            <p class="section-subtitle" style="margin-bottom: 20px;">Collaborations & Inquiries</p>
+            
+            <div class="contact-grid">
+              <div class="contact-info-container">
+                <div class="contact-card">
+                  <div class="contact-card-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                  </div>
+                  <div class="contact-card-details">
+                    <span class="contact-card-label">Email</span>
+                    <a href="mailto:yashjangid458@gmail.com" class="contact-card-value">yashjangid458@gmail.com</a>
+                  </div>
+                </div>
+
+                <div class="contact-card">
+                  <div class="contact-card-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                  </div>
+                  <div class="contact-card-details">
+                    <span class="contact-card-label">Phone</span>
+                    <a href="tel:+917014695677" class="contact-card-value">+91 70146 95677</a>
+                  </div>
+                </div>
+
+                <div class="contact-card">
+                  <div class="contact-card-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                  </div>
+                  <div class="contact-card-details">
+                    <span class="contact-card-label">Location</span>
+                    <span class="contact-card-value">Jaipur, Rajasthan, India</span>
+                  </div>
+                </div>
+              </div>
+
+              <form class="contact-form" onsubmit="event.preventDefault(); alert('Message simulation sent! Connect on LinkedIn or Email directly.');">
+                <div class="form-group">
+                  <label class="form-label">Full Name</label>
+                  <input type="text" class="form-input" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Email Address</label>
+                  <input type="email" class="form-input" placeholder="your@email.com" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Message</label>
+                  <textarea class="form-input" placeholder="Let's build something stateful..." required></textarea>
+                </div>
+                <button type="submit" class="btn-primary" style="margin-top: 10px; justify-content: center; width: 100%;">
+                  Transmit Message
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-socials">
+        <a href="https://linkedin.com/in/yashjangid458" target="_blank" rel="noopener noreferrer" class="footer-social-link">LinkedIn</a>
+        <a href="https://github.com/yashjangid458" target="_blank" rel="noopener noreferrer" class="footer-social-link">GitHub</a>
+        <a href="mailto:yashjangid458@gmail.com" class="footer-social-link">yashjangid458@gmail.com</a>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Premium Glassmorphic Project Explainer Modal -->
+  <div id="project-modal" class="modal-overlay" onclick="closeProjectModal(event)">
+    <div class="modal-card" onclick="event.stopPropagation()">
+      <div class="modal-header">
+        <div class="simulator-dots">
+          <div class="simulator-dot red" onclick="closeProjectModal(event)"></div>
+          <div class="simulator-dot yellow"></div>
+          <div class="simulator-dot green"></div>
+        </div>
+        <span class="modal-title" id="modal-project-title">PROJECT SPECS // AUDIT DECK</span>
+        <button class="modal-close-btn" onclick="closeProjectModal(event)">&times;</button>
+      </div>
+      <div class="modal-body" id="modal-project-body">
+        <!-- Content will be injected dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
