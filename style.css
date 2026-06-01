@@ -33,6 +33,12 @@
   margin: 0;
   padding: 0;
   user-select: none;
+  -webkit-user-select: none;
+}
+
+input, textarea, select {
+  user-select: text !important;
+  -webkit-user-select: text !important;
 }
 
 /* Custom Scrollbar for inner panel content */

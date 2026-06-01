@@ -496,7 +496,9 @@ window.sendBentoUserMsg = function() {
         chatBotTyping = false;
         input.disabled = false;
         if (sendBtn) sendBtn.disabled = false;
-        input.focus();
+        if (window.innerWidth > 768) {
+          input.focus();
+        }
       }
     }
     typeChar();
