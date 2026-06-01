@@ -1672,6 +1672,11 @@ footer {
 
   .bento-card {
     height: auto !important;
+    overflow: visible !important;
+  }
+
+  .skills-grid {
+    height: auto !important;
   }
 
   .hero-bento {
