@@ -155,9 +155,22 @@ header:hover {
   margin-top: -2px;
 }
 
+.header-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  z-index: 100;
+}
+
 nav {
   display: flex;
   gap: 8px;
+  position: absolute;
+  right: 28px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 101;
 }
 
 .nav-btn {
@@ -1527,6 +1540,8 @@ footer {
     bottom: 16px;
     left: 50%;
     transform: translateX(-50%);
+    top: auto !important;
+    right: auto !important;
     background: rgba(10, 5, 22, 0.85);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
