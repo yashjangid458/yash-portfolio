@@ -1635,10 +1635,13 @@ footer {
   }
 
   .panel {
-    grid-template-columns: 1fr;
+    display: flex !important;
+    flex-direction: column !important;
     gap: 16px;
     padding: 10px 10px 110px 10px !important;
     overflow-x: hidden !important;
+    overflow-y: auto !important;
+    height: 100% !important;
   }
 
   .span-2, .span-3, .row-2, .row-3 {
