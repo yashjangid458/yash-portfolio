@@ -1748,6 +1748,10 @@ footer {
     font-size: 11px;
   }
 
+  .ide-status-pill {
+    display: none !important;
+  }
+
   .contact-grid {
     grid-template-columns: 1fr;
   }
