@@ -820,7 +820,7 @@ function initContactForm() {
     
     const formData = new FormData(form);
     
-    fetch('https://formsubmit.co/ajax/yashjangid.gdsc@gmail.com', {
+    fetch('https://formsubmit.co/ajax/8f77df90ad51ac34f65186ec26b8142b', {
       method: 'POST',
       body: formData,
       headers: {
@@ -845,7 +845,7 @@ function initContactForm() {
       console.error('[ERROR] FormSubmit failed:', error);
       statusEl.style.display = 'block';
       statusEl.style.color = '#f43f5e';
-      statusEl.innerText = 'Transmission failed. Direct link: yashjangid.gdsc@gmail.com';
+      statusEl.innerText = 'Transmission failed. Direct link: yashjangid458@gmail.com';
     })
     .finally(() => {
       btn.disabled = false;
