@@ -11,7 +11,8 @@ function bootstrapPortfolio() {
     { name: 'BentoChatAgent', fn: initBentoChatAgent },
     { name: 'CursorGlow', fn: initCursorGlow },
     { name: 'AudioSynthesizer', fn: initAudioSynthesizer },
-    { name: 'DynamicFooterYear', fn: initDynamicFooterYear }
+    { name: 'DynamicFooterYear', fn: initDynamicFooterYear },
+    { name: 'ContactForm', fn: initContactForm }
   ];
   
   initializers.forEach(item => {
@@ -798,4 +799,57 @@ function initDynamicFooterYear() {
   if (yearEl) {
     yearEl.innerText = new Date().getFullYear();
   }
+}
+
+function initContactForm() {
+  const form = document.getElementById('contact-form');
+  const btn = document.getElementById('contact-submit-btn');
+  const btnText = document.getElementById('contact-btn-text');
+  const statusEl = document.getElementById('contact-form-status');
+  
+  if (!form || !btn || !btnText || !statusEl) return;
+  
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    
+    btn.disabled = true;
+    btnText.innerText = 'Transmitting...';
+    statusEl.style.display = 'none';
+    
+    playClickSFX();
+    
+    const formData = new FormData(form);
+    
+    fetch('https://formsubmit.co/ajax/yashjangid.gdsc@gmail.com', {
+      method: 'POST',
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    })
+    .then(response => {
+      if (response.ok) {
+        return response.json();
+      } else {
+        throw new Error('Server responded with an error status');
+      }
+    })
+    .then(data => {
+      statusEl.style.display = 'block';
+      statusEl.style.color = '#34d399';
+      statusEl.innerText = 'Protocol synchronized. Message transmitted successfully!';
+      form.reset();
+      playTransitionSFX();
+    })
+    .catch(error => {
+      console.error('[ERROR] FormSubmit failed:', error);
+      statusEl.style.display = 'block';
+      statusEl.style.color = '#f43f5e';
+      statusEl.innerText = 'Transmission failed. Direct link: yashjangid.gdsc@gmail.com';
+    })
+    .finally(() => {
+      btn.disabled = false;
+      btnText.innerText = 'Transmit Message';
+    });
+  });
 }
